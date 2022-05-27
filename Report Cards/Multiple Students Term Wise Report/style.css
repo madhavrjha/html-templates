@@ -1,0 +1,241 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-logo-width: 120px;
+  --table-header-color: #f9f9f9;
+}
+
+body {
+  background: url('bg-2.png') no-repeat center center / cover;
+  min-height: 90vh;
+}
+
+.score-board {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+/* Utility */
+
+.mb {
+  padding-bottom: 15px !important;
+}
+
+.vt {
+  writing-mode: vertical-lr;
+  /* text-orientation: upright; */
+  transform: rotate(180deg);
+  text-align: left !important; 
+}
+
+
+/* Header */
+
+.header {
+  border: 1px solid #999;
+  border-bottom: none;
+  display: grid;
+  grid-template-columns: var(--header-logo-width) 1fr 2fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 5px;
+  color: #333;
+  padding-bottom: 1rem;
+}
+
+.header img {
+  width: var(--header-logo-width);
+  text-align: center;
+}
+
+.header div:nth-child(2) {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header p {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.header td {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.header tr td:first-child {
+  text-align: right;
+}
+
+.header tr td:nth-child(2) {
+  text-transform: uppercase;
+}
+
+
+
+
+/* Body */
+
+.body table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.body :is(th, td) {
+  border: 1px solid #999;
+  padding: 5px;
+  font-size: 0.8rem;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+/* 
+==============================================================================================
+      Print 
+===============================================================================================
+*/
+
+@media print and (orientation: portrait) {
+  /* portrait styles */
+}
+  
+@media print and (orientation: landscape) {
+  .vt {
+    white-space: nowrap;
+    max-width: 0px !important;
+    letter-spacing: normal;
+    --change-in-x: -10px;
+    --change-in-y: 10px;
+  }
+  
+  .vt.year {
+    transform: translateX(calc(-76px + var(--change-in-x))) translateY(calc(70px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.month {
+    transform: translateX(calc(-76px + var(--change-in-x))) translateY(calc(78px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.day {
+    transform: translateX(calc(-76px + var(--change-in-x))) translateY(calc(78px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.gender {
+    transform: translateX(calc(-89px + var(--change-in-x))) translateY(calc(94px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.noyg {
+    transform: translateX(calc(-89px + var(--change-in-x))) translateY(calc(94px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.noyp {
+    transform: translateX(calc(-89px + var(--change-in-x))) translateY(calc(94px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.noya {
+    transform: translateX(calc(-89px + var(--change-in-x))) translateY(calc(94px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.l1 {
+    transform: translateX(calc(-63px + var(--change-in-x))) translateY(calc(68px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.l2 {
+    transform: translateX(calc(-63px + var(--change-in-x))) translateY(calc(68px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.l3 {
+    transform: translateX(calc(-63px + var(--change-in-x))) translateY(calc(68px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.l4 {
+    transform: translateX(calc(-63px + var(--change-in-x))) translateY(calc(68px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.hl {
+    transform: translateX(calc(-63px + var(--change-in-x))) translateY(calc(65px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.fal {
+    transform: translateX(calc(-63px + var(--change-in-x))) translateY(calc(65px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.ls {
+    transform: translateX(calc(-63px + var(--change-in-x))) translateY(calc(65px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.m {
+    transform: translateX(calc(-63px + var(--change-in-x))) translateY(calc(65px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.avg {
+    transform: translateX(calc(-90px + var(--change-in-x))) translateY(calc(90px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.code {
+    transform: translateX(calc(-88px + var(--change-in-x))) translateY(calc(94px + var(--change-in-y))) rotate(-90deg);
+  }
+  
+  .vt.bdp {
+    transform: translateX(calc(-81px + var(--change-in-x))) translateY(calc(85px + var(--change-in-y))) rotate(-90deg);
+    width: 35px;
+  }
+
+  .body :is(tr:nth-child(1),
+  tr:nth-child(2)) {
+    height: 20px;
+  }
+
+  .body tr:nth-child(3) {
+    height: 170px;
+  }
+
+  .body table {
+    position: relative;
+  }
+
+  .body th {
+    background: transparent !important;
+    outline: 1px solid green;
+    outline-offset: -1px;
+  }
+
+  .body table::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    background: var(--table-header-color);
+    z-index: -1;
+  }
+
+}
+
+/*
+==============================================================================================
+      Styles & Colors 
+===============================================================================================
+*/
+
+.header {
+  background: var(--table-header-color);
+}
+
+.body th {
+  background: var(--table-header-color);
+}
+
+.body tr :is(td:nth-child(1), td:nth-child(2), td:nth-child(3)) {
+  background: var(--table-header-color);
+}

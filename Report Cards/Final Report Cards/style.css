@@ -1,0 +1,211 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('./bg-2.png') no-repeat center center / cover;
+  min-height: 100vh;
+}
+
+#report-card {
+  width: 90%;
+  margin: auto;
+}
+
+/* Utility */
+
+.tl {
+  text-align: left !important;
+}
+
+/* Header */
+
+.header {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.header p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.header i {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.header span {
+  padding-right: 30px;
+}
+
+.header .school-name {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.header .email {
+  text-transform: lowercase;
+}
+
+.header .school-icon {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.header .school-icon img {
+  height: 120px;
+}
+
+/* Sub Header */
+
+.sub-header {
+  padding: 1rem 2px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.sub-header p {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+/* Body */
+
+.body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.body :is(td, th) {
+  border: 1px solid #999;
+  padding: 5px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.body th {
+  text-transform: uppercase;
+}
+
+
+/* Down-Contents */
+
+.general-remarks {
+  border: 1px solid #999;
+  min-height: 100px;
+  border-top: none;
+}
+
+.general-remarks p{
+  font-weight: bold;
+  padding: 5px 0 0 5px;
+  font-size: 0.8rem;
+  color: #222;
+}
+
+.extra-mural-participation {
+  border: 1px solid #999;
+  border-top: none;
+}
+
+.extra-mural-participation p {
+  font-weight: bold;
+  padding: 7px 0 7px 5px;
+  font-size: 0.8rem;
+  color: #222;
+}
+
+.blank {
+  border: 1px solid #999;
+  border-top: none;
+  min-height: 30px;
+}
+
+.signatures {
+  border: 1px solid #999;
+  border-top: none;
+}
+
+.signatures > p {
+  font-weight: bold;
+  padding: 5px 0 5px 5px;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.signatures > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 25px;
+}
+
+.signatures div div {
+  flex: 1;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #333;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .signatures>div {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 5px;
+  }
+
+  .signatures div div {
+    height: 40px;
+  }
+}
+
+
+/* Footer */
+
+.footer {
+  font-size: 0.5rem;
+  color: #222;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer table {
+  border-collapse: collapse;
+}
+
+.footer :is(td, th) {
+  border: 1px solid #999;
+  padding: 2px;
+  text-align: center;
+}
+
+.footer div:nth-child(2) tr td:nth-child(2) {
+  text-align: left;
+}
+
+
+/* 
+==========================================================================
+    Color & Style
+==========================================================================
+*/
+
+.body th {
+  background: #f4f4f4;
+}
+
+.signatures {
+  background: #f9f9f9;
+}
