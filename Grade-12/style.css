@@ -164,7 +164,13 @@
   text-decoration: none;
 }
 
-@media (max-width:576px) {
+@media (max-width: 1400px) {
+  .resources h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 576px) {
   .resources .box {
     padding: 1rem;
   }
