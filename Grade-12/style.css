@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SG */
+
+.sg {
+  background: #fff;
+  padding: 2rem 0;
+  background: url('./bg.png') repeat center center / contain;
+}
+
+.sg .sg-container{
+  border: 1px solid #ccc;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.sg .articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sg article {
+  background: #fff;
+  padding: 2rem;
+  width: max-content;
+  border-radius: 4px;
+  margin-right: 2rem;
+}
+
+.sg h2 {
+  text-align: left;
+}
+
+.sg li {
+  line-height: 1.8em;
+}
+
+.sg a {
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .sg {
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .sg .sg-container {
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .sg article {
+    padding: 10px;
+    margin-right: 0;
+  }
+
+  .sg h5 {
+    font-size: 1.1rem;
+  }
+
+  .sg li {
+    font-size: 0.9rem;
+  }
+}
+
+/* MTG */
+
+.mtg {
+  background: #fff;
+  padding: 2rem 0;
+  background: url('./bg.png') repeat center center / contain;
+}
+
+.mtg .table-container {
+  border: 1px solid #ccc;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.mtg table {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.mtg td {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.mtg th {
+  padding: 10px 5px;
+}
+
+.mtg a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .mtg .table-container{
+    padding: 10px;
+  }
+
+  .mtg table {
+    width: 100%;
+  }
+
+  .mtg :is(th, td) {
+    font-size: 0.8rem;
+    padding: 10px 2px;
+  }
+
+  .mtg tr td:nth-child(2) {
+    white-space: nowrap;
+    display: none;
+  }
+}
+
+/* Resources */
+
+.resources {
+  background: #f4f4f4;
+  padding: 2rem 0;
+}
+
+.resources .container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.resources .box {
+  border: 1px solid #ccc;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #fff;
+  padding: 2rem;
+  width: max-content;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.resources h2 {
+  text-align: left;
+}
+
+.resources li {
+  line-height: 1.8em;
+}
+
+.resources a {
+  text-decoration: none;
+}
+
+@media (max-width:576px) {
+  .resources .box {
+    padding: 1rem;
+  }
+
+  .resources h2 {
+    font-size: 1.5rem;
+  }
+
+  .resources li {
+    font-size: .9rem;
+  }
+}

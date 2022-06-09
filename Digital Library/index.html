@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Library</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Owl Carousel -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="dl-form">
+      <div class="container">
+        <form action="">
+          <select name="grade" id="">
+            <option selected>Grade</option>
+            <option value="1">Grade-1</option>
+            <option value="2">Grade-2</option>
+            <option value="3">Grade-3</option>
+            <option value="4">Grade-4</option>
+            <option value="5">Grade-5</option>
+            <option value="6">Grade-6</option>
+            <option value="7">Grade-7</option>
+            <option value="8">Grade-8</option>
+            <option value="9">Grade-9</option>
+            <option value="10">Grade-10</option>
+            <option value="11">Grade-11</option>
+            <option value="12">Grade-12</option>
+          </select>
+          <select name="category" id="">
+            <option selected>Search In</option>
+            <option value="">Academics</option>
+            <option value="">Question Papers</option>
+            <option value="">Quick Revisions</option>
+            <option value="">Story Books</option>
+            <option value="">Map & Guides</option>
+            <option value="">Presentation</option>
+            <option value="">Vocational Studies</option>
+            <option value="">Books from Schools</option>
+            <option value="">Our Research Papers</option>
+          </select>
+          <input
+            type="text"
+            name="search"
+            placeholder="Search over 10,000 resources"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="dl-showcase">
+      <div class="container py-4">
+        <h2 class="text-center">Most Used Books</h2>
+      </div>
+
+      <div class="container owl-carousel owl-theme">
+        <div class="item">
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="item">
+          <p>Dolores consequuntur ab voluptatum.</p>
+        </div>
+        <div class="item">
+          <p>Quasi animi quod ullam.</p>
+        </div>
+        <div class="item">
+          <p>Repudiandae dolorum aspernatur magnam!</p>
+        </div>
+        <div class="item">
+          <p>Consequuntur qui iure voluptatem.</p>
+        </div>
+        <div class="item">
+          <p>Id cumque maiores nam.</p>
+        </div>
+        <div class="item">
+          <p>Accusamus vero perferendis nihil?</p>
+        </div>
+        <div class="item">
+          <p>Ut ratione deserunt architecto.</p>
+        </div>
+        <div class="item">
+          <p>Consequatur repellat dignissimos perspiciatis?</p>
+        </div>
+        <div class="item">
+          <p>Dignissimos suscipit alias laborum!</p>
+        </div>
+        <div class="item">
+          <p>Blanditiis voluptatibus facilis possimus.</p>
+        </div>
+        <div class="item">
+          <p>Voluptatum nam aut necessitatibus?</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="dl-cat">
+      <div class="container">
+        <h2 class="text-center py-4">Our Categories</h2>
+      </div>
+      <div class="container">
+        <div class="box"><a href="">Academics</a></div>
+        <div class="box"><a href="">Story Books</a></div>
+        <div class="box"><a href="">Question papers</a></div>
+        <div class="box"><a href="">Study Guides & Maps</a></div>
+        <div class="box"><a href="">Quick Revisions</a></div>
+        <div class="box"><a href="">Presentations</a></div>
+        <div class="box"><a href="">Vocational Studies</a></div>
+        <div class="box"><a href="">Our School Books</a></div>
+        <div class="box"><a href="">Research papers</a></div>
+      </div>
+    </section>
+
+    <section id="dl-grade">
+      <div class="container">
+        <h2 class="text-center py-4">See Book as a Grade</h2>
+      </div>
+      <div class="container">
+        <div class="box"><a href="">Grade-1</a></div>
+        <div class="box"><a href="">Grade-2</a></div>
+        <div class="box"><a href="">Grade-3</a></div>
+        <div class="box"><a href="">Grade-4</a></div>
+        <div class="box"><a href="">Grade-5</a></div>
+        <div class="box"><a href="">Grade-6</a></div>
+        <div class="box"><a href="">Grade-7</a></div>
+        <div class="box"><a href="">Grade-8</a></div>
+        <div class="box"><a href="">Grade-9</a></div>
+        <div class="box"><a href="">Grade-10</a></div>
+        <div class="box"><a href="">Grade-11</a></div>
+        <div class="box"><a href="">Grade-12</a></div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+          1400: {
+            items: 6,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

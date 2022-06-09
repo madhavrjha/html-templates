@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+:root {
+  --lb-form-height: 400px;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+#dl-form {
+  min-height: var(--lb-form-height);
+  background: url('./bg.png') no-repeat center center / cover;
+  position: relative;
+}
+
+#dl-form::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--lb-form-height);
+  background: rgba(0 0 0 / 40%);
+  box-shadow: inset 30px 50px 50px rgba(0 0 0 / 50%), inset -30px -50px 50px rgba(0 0 0 / 50%);
+  z-index: 1;
+}
+
+#dl-form * {
+  position: relative;
+  z-index: 2;
+}
+
+#dl-form .container {
+  width: 100%;
+  height: var(--lb-form-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#dl-form :is(select, input, button) {
+  padding: 8px 16px;
+  outline: none;
+  height: 40px;
+}
+
+#dl-form :is(input) {
+  min-width: 500px;
+}
+
+/* #dl-showcase */
+
+#dl-showcase {
+  padding: 2rem 0;
+}
+
+#dl-showcase .container {
+  
+}
+
+#dl-showcase .item {
+  width: 200px !important; 
+  height: 320px;
+  overflow: hidden;
+  background: url('https://source.unsplash.com/400x900/?nature,animals') no-repeat center center / cover;
+  position: relative;
+}
+
+#dl-showcase .item::before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  background: rgba(0 0 0 / 40%);
+  z-index: 1;
+}
+
+#dl-showcase .item p {
+  position: relative;
+  z-index: 5;
+  margin-top: 4rem;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+
+
+#dl-showcase .owl-dots {
+  display: none;
+}
+
+#dl-showcase .owl-nav {
+  position: relative;
+}
+
+#dl-showcase .owl-nav button {
+  background: transparent;
+}
+
+#dl-showcase .owl-nav span{
+  font-size: 2.5rem;
+  color: #999;
+  padding: 0 3rem;
+}
+
+#dl-showcase .owl-nav span:hover {
+  background: transparent !important;
+}
+
+/* #dl-cat */
+
+#dl-cat {
+  background: #fff;
+  padding: 2rem 0;
+}
+
+#dl-cat .container:nth-child(2) {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-evenly;
+}
+
+#dl-cat .box {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #555;
+  border-radius: 50%;
+  line-height: 200px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+/* #dl-grade */
+
+#dl-grade {
+  background: #f4f4f4;
+  padding: 2rem 0;
+}
+
+#dl-grade .container:nth-child(2) {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-evenly;
+}
+
+#dl-grade .box {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #555;
+  border-radius: 50%;
+  line-height: 150px;
+  text-align: center;
+  font-weight: bolder;
+}

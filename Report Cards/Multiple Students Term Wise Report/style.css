@@ -205,8 +205,6 @@ body {
 
   .body th {
     background: transparent !important;
-    outline: 1px solid green;
-    outline-offset: -1px;
   }
 
   .body table::after {
