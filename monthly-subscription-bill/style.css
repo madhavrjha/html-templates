@@ -9,7 +9,7 @@
 
 
 body {
-  background-color: #c2ebeb66;
+  /* background-color: #c2ebeb66; */
   min-height: 100vh;
 }
 
@@ -18,7 +18,7 @@ body {
   padding: 1rem;
   margin: 0 auto;
   background: #fff;
-  break-after: always;
+  page-break-after: always;
   margin-bottom: 1rem;
 }
 
@@ -100,7 +100,7 @@ table .ts-head {
   background: #ddd;
 }
 
-table ul {
+table :is(ul, ol) {
   padding-left: 2rem;
 }
 
@@ -123,4 +123,14 @@ table li {
   font-weight: 400;
   text-align: center;
   font-size: .9rem;
+}
+
+/* Page-3 */
+
+#p3 table td {
+  min-width: 150px;
+}
+
+#p3 table img {
+  max-width: 100px;
 }
