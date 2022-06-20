@@ -15,36 +15,28 @@ i {
 
 body {
   line-height: 1.7;
-  background: #f4f4f4;
 }
 
 .page {
   margin: 1rem auto;
   max-width: 800px;
   background-color: #fff;
+  padding: 1rem;
 
   /* Grid CSS */
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.page :is(.left, .right) {
+.page > div {
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.page :is(.left, .right) > div { 
-  margin-bottom: 1rem;
-  justify-content: start;
-}
-
-.page .left {
-  /* background: #3975a1; for temp */
-  /* color: #fff; for temp */
 }
 
 /* Profile-Photo */
+
+.page .profile-photo {
+  grid-column: 1 / -1;
+}
 
 .page .profile-photo img {
   display: block;
@@ -58,6 +50,10 @@ body {
 
 /* Name */
 
+.page .name {
+  grid-column: 1 / -1;
+}
+
 .page .name p{
   text-align: center;
   font-weight: bold;
@@ -65,25 +61,10 @@ body {
   margin-bottom: 0;
 }
 
-/* Cards */
-
-.page .cards table{
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.page .cards :is(td, th) {
-  padding: 2px 5px;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  font-weight: normal;
-  color: #222;
-}
-
 /* Profile-Info */
 
 .page .profile-info p {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 0;
@@ -98,49 +79,6 @@ body {
   padding: 2px 5px;
   border-bottom: 1px solid #eee;
   font-weight: normal;
-}
-
-
-/* Projects */
-
-.page .projects p{
-  text-align: left;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 0;
-}
-
-.page .projects li {
-  line-height: 1.5;
-  color: #555;
-}
-
-/* Invoices */
-
-.page .invoices p {
-  text-align: left;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 0;
-}
-
-.page .invoices li {
-  line-height: 1.5;
-  color: #555;
-}
-
-/* Documents */
-
-.page .documents p {
-  text-align: left;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 0;
-}
-
-.page .documents li {
-  line-height: 1.5;
-  color: #555;
 }
 
 /* Bank-Details */
@@ -161,4 +99,22 @@ body {
   padding: 2px 5px;
   border-bottom: 1px solid #eee;
   font-weight: normal;
+}
+
+/* Documents */
+
+.page .documents {
+  grid-column: 1 / -1;
+}
+
+.page .documents p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.page .documents li {
+  line-height: 1.5;
+  color: #555;
 }
