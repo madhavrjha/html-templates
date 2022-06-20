@@ -1,0 +1,164 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+i {
+  display: inline-block;
+  padding-right: 6px;
+}
+
+body {
+  line-height: 1.7;
+  background: #f4f4f4;
+}
+
+.page {
+  margin: 1rem auto;
+  max-width: 800px;
+  background-color: #fff;
+
+  /* Grid CSS */
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.page :is(.left, .right) {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.page :is(.left, .right) > div { 
+  margin-bottom: 1rem;
+  justify-content: start;
+}
+
+.page .left {
+  /* background: #3975a1; for temp */
+  /* color: #fff; for temp */
+}
+
+/* Profile-Photo */
+
+.page .profile-photo img {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Name */
+
+.page .name p{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+/* Cards */
+
+.page .cards table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.page .cards :is(td, th) {
+  padding: 2px 5px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-weight: normal;
+  color: #222;
+}
+
+/* Profile-Info */
+
+.page .profile-info p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.page .profile-info table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.page .profile-info table :is(td, th) {
+  padding: 2px 5px;
+  border-bottom: 1px solid #eee;
+  font-weight: normal;
+}
+
+
+/* Projects */
+
+.page .projects p{
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.page .projects li {
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Invoices */
+
+.page .invoices p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.page .invoices li {
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Documents */
+
+.page .documents p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.page .documents li {
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Bank-Details */
+
+.page .bank-details p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.page .bank-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.page .bank-details table :is(td, th) {
+  padding: 2px 5px;
+  border-bottom: 1px solid #eee;
+  font-weight: normal;
+}

@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+  display: inline-block;
+  padding-right: 6px;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  line-height: 1.7;
+  height: 100vh;
+  background: #fff;
+}
+
+
+aside {
+  background: #e5e5e5;
+}
+
+main {
+  background: #f4f4f4;
+  padding: 1rem;
+}
+
+.box {
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 300px auto;
+  gap: 1.5rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.box .user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.box .user-profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.box .name h1 {
+  font-size: 1.2rem;
+  color: #222;
+  display: inline-block;
+}
+
+.box .name span {
+  color: #999;
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+.box .ped {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 2rem;
+  gap: 2rem;
+}
+
+.box .ped-item {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.box .ped-item div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.box .ped-item div:first-child {
+  border-right: 1px solid #ccc;
+}
+
+
+.box .ped :is(h2, p) {
+  text-align: center;
+}
+
+.box .ped h2 {
+  font-size: .9rem;
+  color: #555;
+}
+
+.box .ped p {
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.box .edit {
+  position: absolute; 
+  right: 1rem;
+  font-size: 0.9rem;
+  color: #777; 
+  transition: all .3s ease;
+}
+
+.box .edit:hover {
+  color: #111;
+  cursor: pointer;
+}
+
+.box .edit i {
+  display: inline-block;
+  padding-right: 6px;
+}
+
+.box .profiles {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.box .profile-section {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box .profile-section h2 {
+  font-size: 1.1rem;
+  padding: 6px 10px;
+  padding-left: 1rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0;
+  color: #111;
+  background-color: #f9f9f9;
+}
+
+.box .profile-section table {
+  width: 100%;
+}
+
+.box .profile-section.profile div{
+  padding: 10px;
+}
+
+.box .profile-section :is(td, th) {
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 5px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.box .profile-section th {
+  color: #555;
+}
+
+.box .profile-section td {
+  color: #222;
+}
+
+.box .profile-section ul {
+  padding: 10px;
+  padding-left: 2rem;
+}
+
+.box .profile-section li {
+  line-height: 2;
+  color: #555;
+}
+
+@media (max-width: 1200px) {
+  .box .profiles {
+    grid-template-columns: 1fr;
+  }
+
+  .box .ped {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+
+    .box .ped {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+  .box .ped {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
+
+/* File Section */
+
+.white-box {
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.white-box .profile-detail {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.white-box .user-profile-update {
+  color: transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.user-profile-update input {
+  display: none;
+}
+
+.user-profile-update img {
+  position: absolute;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.user-profile-update .-label {
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+}
+
+.user-profile-update:hover .-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  color: #fafafa;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 50%;
+  position: relative;
+  top: -10px;
+}
+
+.user-profile-update + div {
+  display: flex;
+  justify-content: center;
+}
+
+.user-profile-update + div button{
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  outline: none;
+  border: none;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+}
+
+.white-box .left label {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.white-box .left input{
+  width: 100%;
+  font-size: .8rem;
+  padding-left: 4rem;
+}
+
+
+@media (max-width: 992px) {
+  .white-box .profile-detail {
+    grid-template-columns: 1fr;
+  }
+
+}

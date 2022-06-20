@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View profile</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <aside></aside>
+    <main>
+      <div class="box">
+        <div>
+          <div class="user-profile">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRij6dtiHizH96qpCOe8WeXXP3yLyQJkPdGVg&usqp=CAU"
+              alt=""
+            />
+          </div>
+        </div>
+        <div>
+          <div class="edit">
+            <i class="fa-solid fa-pen-to-square"></i><span>Edit Profile</span>
+          </div>
+          <div class="name">
+            <h1>Fredrick D John</h1>
+            <span>last login at --</span>
+          </div>
+          <div class="ped">
+            <div class="ped-item">
+              <div>
+                <h2><i class="fa-solid fa-folder-closed"></i> Projetcs</h2>
+              </div>
+              <div><p>10</p></div>
+            </div>
+            <div class="ped-item">
+              <div>
+                <h2><i class="fa-solid fa-money-bill-1-wave"></i> Earninngs</h2>
+              </div>
+              <div><p>4,500</p></div>
+            </div>
+            <div class="ped-item">
+              <div>
+                <h2><i class="fa-solid fa-receipt"></i> Due Invoices</h2>
+              </div>
+              <div><p>0</p></div>
+            </div>
+          </div>
+          <div class="profiles">
+            <div class="profile-section profile">
+              <h2>Profile Info</h2>
+              <div>
+                <table>
+                  <tr>
+                    <th>Full Name</th>
+                    <td>Fredrick D John</td>
+                  </tr>
+                  <tr>
+                    <th>Email</th>
+                    <td>fredrick@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <th>Company Name</th>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <th>Mobile</th>
+                    <td>+27 0147283691</td>
+                  </tr>
+                  <tr>
+                    <th>Gender</th>
+                    <td>Male</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="profile-section projects">
+              <h2>Projects</h2>
+              <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Nemo, sint itaque?</li>
+                <li>Nisi, aliquam atque?</li>
+                <li>In, veniam unde!</li>
+              </ul>
+            </div>
+            <div class="profile-section invoices">
+              <h2>Invoices</h2>
+              <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Nemo, sint itaque?</li>
+                <li>Nisi, aliquam atque?</li>
+                <li>In, veniam unde!</li>
+              </ul>
+            </div>
+            <div class="profile-section documents">
+              <h2>Documents</h2>
+              <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Nemo, sint itaque?</li>
+                <li>Nisi, aliquam atque?</li>
+                <li>In, veniam unde!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="white-box">
+        <h2 class="mb-4">Account Details</h2>
+        <section class="profile-detail">
+          <div class="left">
+            <div class="user-profile-update">
+              <label class="-label" for="file">
+                <span>Change Image</span>
+              </label>
+              <input id="file" type="file" onchange="loadFile(event)" />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRij6dtiHizH96qpCOe8WeXXP3yLyQJkPdGVg&usqp=CAU"
+                id="output"
+                width="200"
+              />
+            </div>
+            <div>
+              <button class="text-center" onclick="activeload(event)">
+                <i class="fa-solid fa-pencil"></i> Change Image
+              </button>
+            </div>
+          </div>
+          <div class="right">
+            <div class="row">
+              <div class="mb-3 col-md-3">
+                <label for="" class="form-label">Salutation</label>
+                <select class="form-select">
+                  <option selected>Choose..</option>
+                  <option value="1">Mr</option>
+                  <option value="1">Mrs</option>
+                  <option value="1">Miss</option>
+                  <option value="1">Dr</option>
+                  <option value="1">Sir</option>
+                  <option value="1">Madam</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-5">
+                <label class="form-label">Agent Name</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="mb-3 col-md-4">
+                <label for="" class="form-label">Gender</label>
+                <select class="form-select">
+                  <option selected>Choose..</option>
+                  <option value="1">Male</option>
+                  <option value="1">Female</option>
+                  <option value="1">Other</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" />
+              </div>
+              <div class="mb-3 col-md-6">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" />
+              </div>
+              <div class="mb-3 col-md-4">
+                <label for="" class="form-label">Country</label>
+                <select class="form-select">
+                  <option selected>Choose..</option>
+                  <option value="1">South Africa</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-4">
+                <label class="form-label">Mobile</label>
+                <input type="number" class="form-control" />
+              </div>
+              <div class="mb-3 col-md-4">
+                <label for="" class="form-label">Added By</label>
+                <select class="form-select">
+                  <option selected>Choose..</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-12">
+                <label class="form-label">Note</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <div class="my-3 col-md-4">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="canLogin"
+                    checked
+                  />
+                  <label class="form-check-label" for="canLogin"
+                    >Can User Login to App?</label
+                  >
+                </div>
+              </div>
+              <div class="my-3 col-md-4">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="canReceiveEmail"
+                    checked
+                  />
+                  <label class="form-check-label" for="canReceiveEmail"
+                    >Can receive email notification?</label
+                  >
+                </div>
+              </div>
+              <div class="my-3 col-md-4">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="agentStatus"
+                    checked
+                  />
+                  <label class="form-check-label" for="agentStatus"
+                    >Active or Inactive?</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3 col-md-4">
+                <label for="" class="form-label"
+                  >Agent Assign to Higher Team</label
+                >
+                <select class="form-select">
+                  <option selected>Choose..</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-8">
+                <label class="form-label">Status Comment</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <script>
+      var loadFile = function (event) {
+        var image = document.getElementById("output");
+        image.src = URL.createObjectURL(event.target.files[0]);
+      };
+
+      var activeload = function () {
+        event.preventDefault();
+        document.querySelector(".user-profile-update .-label span").click();
+      };
+    </script>
+  </body>
+</html>
