@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 2;
+}
+
+#nsc {
+  background: #fff;
+  padding: 2rem 0;
+  background: url('./bg.png') repeat center center / contain;
+}
+
+#nsc a {
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+#nsc .container {
+  border: 1px solid #ccc;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+#nsc .faq {
+  margin-bottom: 1rem;
+}
+
+#nsc .highlight {
+  background-color: #ededed;
+  color: #3844cf;
+  font-weight: bold;
+  padding: 5px;
+}
+
+#nsc .q {
+  font-weight: bold;
+}
+
+#nsc .a {
+  padding-left: 1rem;
+}
+
+/* Resources */
+
+.resources {
+  background: #f4f4f4;
+  padding: 2rem 0;
+}
+
+.resources .container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.resources .box {
+  border: 1px solid #ccc;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #fff;
+  padding: 2rem;
+  width: max-content;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.resources h2 {
+  text-align: left;
+}
+
+.resources li {
+  line-height: 1.8em;
+}
+
+.resources a {
+  text-decoration: none;
+}
