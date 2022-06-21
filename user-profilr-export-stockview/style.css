@@ -22,21 +22,17 @@ body {
   max-width: 800px;
   background-color: #fff;
   padding: 1rem;
-
-  /* Grid CSS */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
-.page > div {
+.page > table {
+  width: 100%;
+}
+
+.page > table > tr > td {
   padding: 1rem;
 }
 
 /* Profile-Photo */
-
-.page .profile-photo {
-  grid-column: 1 / -1;
-}
 
 .page .profile-photo img {
   display: block;
@@ -49,10 +45,6 @@ body {
 }
 
 /* Name */
-
-.page .name {
-  grid-column: 1 / -1;
-}
 
 .page .name p{
   text-align: center;
@@ -102,10 +94,6 @@ body {
 }
 
 /* Documents */
-
-.page .documents {
-  grid-column: 1 / -1;
-}
 
 .page .documents p {
   text-align: left;

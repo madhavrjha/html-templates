@@ -12,78 +12,185 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
 
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap.min.css"
-    />
-
-    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
   </head>
   <body>
-    <div class="page">
-      <div class="profile-photo">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRij6dtiHizH96qpCOe8WeXXP3yLyQJkPdGVg&usqp=CAU"
-          alt=""
-        />
-      </div>
-      <div class="name"><p>Fredrick D John</p></div>
-      <div class="profile-info">
-        <p>Profile Info</p>
-        <table>
-          <tr>
-            <th>Name</th>
-            <td>Fredrick D John</td>
-          </tr>
-          <tr>
-            <th>Email</th>
-            <td>fredrick@gmail.com</td>
-          </tr>
-          <tr>
-            <th>Company</th>
-            <td>--</td>
-          </tr>
-          <tr>
-            <th>Mobile</th>
-            <td>+27 0147283691</td>
-          </tr>
-          <tr>
-            <th>Gender</th>
-            <td>Male</td>
-          </tr>
-        </table>
-      </div>
-      <div class="bank-details">
-        <p>Bank Details</p>
-        <table>
-          <tr>
-            <th>Account Holder</th>
-            <td>BG Vin</td>
-          </tr>
-          <tr>
-            <th>Account Number</th>
-            <td>123</td>
-          </tr>
-          <tr>
-            <th>Branch Name</th>
-            <td>Bank Branch</td>
-          </tr>
-          <tr>
-            <th>Bank Name</th>
-            <td>wStandard</td>
-          </tr>
-        </table>
-      </div>
-      <div class="documents">
-        <p>Documents</p>
-        <ul>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Ullam, beatae. Illo, qui nam.</li>
-          <li>Iusto eum soluta totam facilis.</li>
-          <li>Neque cupiditate asperiores rerum cumque.</li>
-        </ul>
-      </div>
+    <div
+      class="page"
+      style="
+        margin: auto;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 1rem;
+      "
+    >
+      <table style="width: 100%">
+        <tr>
+          <td colspan="2">
+            <div class="profile-photo">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRij6dtiHizH96qpCOe8WeXXP3yLyQJkPdGVg&usqp=CAU"
+                alt="user-photo"
+                style="
+                  display: block;
+                  margin: auto;
+                  width: 150px;
+                  height: 150px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="padding-bottom: 10px">
+            <div class="name">
+              <p
+                style="
+                  text-align: center;
+                  font-weight: bold;
+                  font-size: 1.2rem;
+                  margin-bottom: 0;
+                "
+              >
+                Fredrick D John
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 1rem">
+            <div class="profile-info">
+              <p
+                style="
+                  text-align: left;
+                  font-weight: bold;
+                  font-size: 1.2rem;
+                  margin-bottom: 10px;
+                "
+              >
+                Profile Info
+              </p>
+              <table
+                style="width: 100%; border-collapse: collapse; margin-top: 0"
+              >
+                <tr>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    Name
+                  </td>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    Fredrick D John
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    Email
+                  </td>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    fredrick@gmail.com
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    Company
+                  </td>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    --
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    Mobile
+                  </td>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    +27 0147283691
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 2px 5px">Gender</td>
+                  <td style="padding: 2px 5px">Male</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td style="padding: 1rem">
+            <div class="bank-details">
+              <p
+                style="
+                  text-align: left;
+                  font-weight: bold;
+                  font-size: 1.2rem;
+                  margin-bottom: 10px;
+                "
+              >
+                Bank Details
+              </p>
+              <table style="width: 100%; border-collapse: collapse">
+                <tr>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    Account Holder
+                  </td>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    BG Vin
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    Account Number
+                  </td>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    123
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    Branch Name
+                  </td>
+                  <td style="padding: 2px 5px; border-bottom: 1px solid #eee">
+                    Bank Branch
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 2px 5px">Bank Name</td>
+                  <td style="padding: 2px 5px">wStandard</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="padding: 1rem">
+            <div class="documents">
+              <p
+                style="
+                  text-align: left;
+                  font-weight: bold;
+                  font-size: 1.2rem;
+                  margin-bottom: 0;
+                "
+              >
+                Documents
+              </p>
+              <ul>
+                <li style="line-height: 1.5; color: #555">
+                  Lorem ipsum dolor sit amet.
+                </li>
+                <li style="line-height: 1.5; color: #555">
+                  Ullam, beatae. Illo, qui nam.
+                </li>
+                <li style="line-height: 1.5; color: #555">
+                  Iusto eum soluta totam facilis.
+                </li>
+                <li style="line-height: 1.5; color: #555">
+                  Neque cupiditate asperiores rerum cumque.
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
   </body>
 </html>
